@@ -7,8 +7,8 @@
 ## 📥 Download
 
 Die vorab kompilierte Debug-APK steht direkt zum Download bereit:
-- **Aktuelle APK**: [`app/build/outputs/apk/debug/app-debug.apk`](file:///home/o1623158495/mein-projekt/BlockBrowser/app/build/outputs/apk/debug/app-debug.apk) *(ca. 5,8 MB)*
-- **GitHub Releases Download**: Nach dem Push auf GitHub unter `https://github.com/b3taisadonna/Gravity/releases/latest/download/app-debug.apk`
+- **Direkter GitHub Download**: [**Gravity-v1.0.0-debug.apk herunterladen**](https://github.com/b3taisadonna/Gravity/releases/download/v1.0.0/Gravity-v1.0.0-debug.apk) *(ca. 5,8 MB)*
+- **GitHub Release-Übersicht**: [GitHub Releases v1.0.0](https://github.com/b3taisadonna/Gravity/releases/tag/v1.0.0)
 
 ---
 
