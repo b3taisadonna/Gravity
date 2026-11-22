@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gravity</string>
+    <string name="address_bar_hint">Adresse oder Suchbegriff eingeben</string>
+    <string name="action_back">Zurück</string>
+    <string name="action_forward">Vorwärts</string>
+    <string name="action_reload">Neu laden</string>
+    <string name="action_new_tab">Neuer Tab</string>
+    <string name="action_tabs">Tabs</string>
+    <string name="action_menu">Menü</string>
+    <string name="action_favorite">Favorit</string>
+    <string name="action_translate">Übersetzen</string>
+    <string name="action_extensions">Erweiterungen</string>
+
+    <!-- Menü-Optionen -->
+    <string name="menu_favorites">Favoriten</string>
+    <string name="menu_history">Verlauf</string>
+    <string name="menu_downloads">Downloads</string>
+    <string name="menu_extensions">Erweiterungen</string>
+    <string name="menu_devtools">Entwicklertools</string>
+    <string name="menu_settings">Einstellungen…</string>
+    <string name="menu_desktop_site">Desktop-Website</string>
+    <string name="menu_ua_switch">User-Agent wechseln…</string>
+    <string name="menu_open_with">Seite öffnen mit…</string>
+    <string name="menu_tabs">Tabs verwalten…</string>
+
+    <!-- Favoriten -->
+    <string name="favorites_title">Favoriten</string>
+    <string name="favorites_add_current">★ Aktuelle Seite hinzufügen</string>
+    <string name="favorites_empty">Noch keine Favoriten gespeichert</string>
+    <string name="favorites_added">Zu Favoriten hinzugefügt</string>
+    <string name="favorites_removed">Aus Favoriten entfernt</string>
+
+    <!-- Verlauf -->
+    <string name="history_title">Verlauf</string>
+    <string name="history_clear">Verlauf leeren</string>
+    <string name="history_empty">Kein Verlauf vorhanden</string>
+    <string name="history_cleared">Verlauf wurde geleert</string>
+
+    <!-- Downloads -->
+    <string name="downloads_title">Downloads</string>
+    <string name="downloads_open_folder">Download-Ordner öffnen</string>
+    <string name="downloads_clear_list">Liste leeren</string>
+    <string name="downloads_empty">Keine Downloads vorhanden</string>
+
+    <!-- Entwicklertools -->
+    <string name="devtools_title">Entwicklertools</string>
+    <string name="devtools_ua_title">User-Agent &amp; Browser-Erkennung</string>
+    <string name="devtools_ua_desc">Legt fest, wie sich der Browser gegenüber Webseiten identifiziert:</string>
+    <string name="devtools_ua_auto">⚡ Automatisch (Firefox für Add-ons)</string>
+    <string name="devtools_ua_firefox">🦊 Firefox Desktop</string>
+    <string name="devtools_ua_mobile">📱 Standard System (Mobil)</string>
+    <string name="devtools_ua_desktop">💻 Standard Desktop</string>
+    <string name="devtools_ua_apply">User-Agent anwenden &amp; neu laden</string>
+    <string name="devtools_open_firefox_addons">🦊 Zu Mozilla Add-ons</string>
+    <string name="devtools_open_with">🌐 Seite öffnen mit… (Externe App / Browser)</string>
+    <string name="devtools_install_xpi">📦 Firefox-Erweiterung (.xpi) installieren</string>
+    <string name="devtools_console_title">JavaScript Konsole</string>
+    <string name="devtools_console_clear">Logs leeren</string>
+    <string name="devtools_no_logs">Keine Konsolenmeldungen erfasst</string>
+    <string name="devtools_run_js">Ausführen</string>
+    <string name="devtools_source_title">Quelltext &amp; Inspektor</string>
+    <string name="devtools_view_source">Seitenquelltext anzeigen (HTML)</string>
+
+    <!-- Erweiterungen -->
+    <string name="extensions_title">Erweiterungen</string>
+    <string name="extensions_stores_header">Mozilla Firefox Add-ons</string>
+    <string name="extensions_installed_header">Integrierte Skripte &amp; Erweiterungen</string>
+
+    <!-- Einstellungen -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_category_display">Anzeige</string>
+    <string name="settings_desktop_site">Desktop-Website</string>
+    <string name="settings_desktop_site_desc">Neue Tabs standardmäßig im Desktop-Modus öffnen</string>
+    <string name="settings_category_search">Suche &amp; Startseite</string>
+    <string name="settings_search_engine">Suchmaschine</string>
+    <string name="settings_home_page">Startseite</string>
+    <string name="settings_category_privacy">Datenschutz &amp; Sicherheit</string>
+    <string name="settings_javascript">JavaScript aktivieren</string>
+    <string name="settings_javascript_desc">Erlaubt interaktive Funktionen und Skripte auf Webseiten</string>
+    <string name="settings_dom_storage">DOM-Speicher aktivieren</string>
+    <string name="settings_dom_storage_desc">Erlaubt Webseiten das lokale Speichern von Daten (HTML5)</string>
+    <string name="settings_clear_data">Browserdaten löschen</string>
+    <string name="settings_clear_data_desc">Cache, Verlauf und Cookies leeren</string>
+    <string name="settings_clear_data_confirm">Möchten Sie Verlauf, Cache und Cookies wirklich löschen?</string>
+    <string name="settings_clear_data_success">Browserdaten wurden erfolgreich gelöscht</string>
+</resources>

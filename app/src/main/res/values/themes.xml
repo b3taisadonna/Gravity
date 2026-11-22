@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Gravity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorSurfaceVariant">@color/light_surface_variant</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="android:windowBackground">@color/light_surface</item>
+    </style>
+
+    <style name="Theme.Gravity.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorSurfaceVariant">@color/dark_surface_variant</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        <item name="android:windowBackground">@color/dark_surface</item>
+    </style>
+
+    <style name="Theme.Gravity.MidnightBlue" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/midnight_primary</item>
+        <item name="colorSurface">@color/midnight_surface</item>
+        <item name="colorSurfaceVariant">@color/midnight_surface_variant</item>
+        <item name="colorOnSurface">@color/midnight_on_surface</item>
+        <item name="android:windowBackground">@color/midnight_surface</item>
+    </style>
+
+    <style name="Theme.Gravity.Forest" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/forest_primary</item>
+        <item name="colorSurface">@color/forest_surface</item>
+        <item name="colorSurfaceVariant">@color/forest_surface_variant</item>
+        <item name="colorOnSurface">@color/forest_on_surface</item>
+        <item name="android:windowBackground">@color/forest_surface</item>
+    </style>
+
+    <style name="Theme.Gravity.HighContrast" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/contrast_primary</item>
+        <item name="colorSurface">@color/contrast_surface</item>
+        <item name="colorSurfaceVariant">@color/contrast_surface_variant</item>
+        <item name="colorOnSurface">@color/contrast_on_surface</item>
+        <item name="android:windowBackground">@color/contrast_surface</item>
+    </style>
+
+</resources>

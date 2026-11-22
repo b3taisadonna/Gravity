@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Store Launchers (Firefox Only) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mozilla Add-ons Store"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenFirefoxAddonsExt"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🦊 Mozilla Firefox Add-ons öffnen"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Install XPI button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInstallXpiFile"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📦 .xpi-Datei installieren (aus Downloads / Speicher)"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorSurfaceVariant"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Installed XPI Extensions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Installierte Firefox-Erweiterungen (.xpi)"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tippen Sie auf eine Erweiterung, um Optionen wie im Firefox Browser zu öffnen."
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="11sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textNoXpiInstalled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keine externen .xpi-Erweiterungen installiert"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/xpiExtensionsListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorSurfaceVariant"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Built-in scripts -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Integrierte Userscripts"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <LinearLayout
+            android:id="@+id/extensionsListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

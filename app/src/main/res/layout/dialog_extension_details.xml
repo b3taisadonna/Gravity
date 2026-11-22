@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title & Version Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_extension"
+                android:tint="?attr/colorPrimary"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailExtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erweiterungsname"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detailExtAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="von Firefox Developer"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailExtVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="v1.0"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/bg_badge" />
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/detailExtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beschreibung der Firefox-Erweiterung"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="13sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp" />
+
+        <!-- Main Switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_modern"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Erweiterung aktivieren"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/detailSwitchEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Popup Button (e.g. Proton Pass Login / Vault) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenExtPopup"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚀 Popup öffnen (z.B. Proton Pass Login / Tresor)"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Options UI Page Button (like AdGuard options / filter rules) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenExtOptionsUi"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Einstellungen &amp; Filter (z.B. AdGuard Optionen)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Card: Website Access / Berechtigungen auf Webseiten -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_modern"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zugriff auf Webseiten"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/detailExtMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auf allen Webseiten aktiv"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+
+        <!-- Card: Permissions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_modern"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Erforderliche Berechtigungen"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/detailExtPermissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keine speziellen Berechtigungen"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Uninstall Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDetailUninstall"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗑️ Erweiterung deinstallieren"
+            android:textColor="?attr/colorError" />
+
+    </LinearLayout>
+</ScrollView>

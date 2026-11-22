@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Modern Toolbar: back / address bar / extensions / translate / favorite / reload / menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="?attr/colorSurfaceVariant"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/action_back" />
+
+        <EditText
+            android:id="@+id/addressBar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_address_bar"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:textSize="14sp"
+            android:hint="@string/address_bar_hint" />
+
+        <!-- Extensions quick access button directly beside address bar -->
+        <ImageButton
+            android:id="@+id/extensionsButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_extension"
+            android:contentDescription="@string/action_extensions" />
+
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_star_border"
+            android:contentDescription="@string/action_favorite" />
+
+        <ImageButton
+            android:id="@+id/translateButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_translate"
+            android:contentDescription="@string/action_translate" />
+
+        <ImageButton
+            android:id="@+id/reloadButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_refresh"
+            android:contentDescription="@string/action_reload" />
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_more_vert"
+            android:contentDescription="@string/action_menu" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:visibility="gone" />
+
+    <!-- Each tab's WebView is added here programmatically; only the active one is visible. -->
+    <FrameLayout
+        android:id="@+id/webViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
