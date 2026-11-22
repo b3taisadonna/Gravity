@@ -8,7 +8,7 @@
 
 Die vorab kompilierte Debug-APK steht direkt zum Download bereit:
 - **Aktuelle APK**: [`app/build/outputs/apk/debug/app-debug.apk`](file:///home/o1623158495/mein-projekt/BlockBrowser/app/build/outputs/apk/debug/app-debug.apk) *(ca. 5,8 MB)*
-- **GitHub Releases Download**: Nach dem Push auf GitHub unter `https://github.com/<DEIN-BENUTZERNAME>/Gravity/releases/latest/download/Gravity.apk`
+- **GitHub Releases Download**: Nach dem Push auf GitHub unter `https://github.com/b3taisadonna/Gravity/releases/latest/download/app-debug.apk`
 
 ---
 
@@ -74,7 +74,7 @@ Um dieses Projekt in dein eigenes GitHub-Konto zu übertragen:
 git init -b main
 
 # 2. Remote-URL deines GitHub Repositories setzen
-git remote add origin https://github.com/<DEIN-BENUTZERNAME>/Gravity.git
+git remote add origin https://github.com/b3taisadonna/Gravity.git
 
 # 3. Alle Dateien committen
 git add .
@@ -92,7 +92,7 @@ git push -u origin main
 5. Klicke auf **Publish release**.
 6. Der direkte Download-Link lautet dann:
    ```
-   https://github.com/<DEIN-BENUTZERNAME>/Gravity/releases/download/v1.0.0/app-debug.apk
+   https://github.com/b3taisadonna/Gravity/releases/download/v1.0.0/app-debug.apk
    ```
 
 ---
